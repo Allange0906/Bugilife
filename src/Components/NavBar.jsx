@@ -1,5 +1,5 @@
 import {HashLink} from 'react-router-hash-link'
-import '../classes/NavBar.css'
+import '../Classes/NavBar.css'
 
 import bugilLogo from '../assets/bugilifeLogo.svg'
 
