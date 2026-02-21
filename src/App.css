@@ -1,0 +1,128 @@
+#root {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  /*padding: 2rem;*/
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.logo {
+  height: 3em;
+  padding-top : 1.5em;
+  padding-left: 0;
+  will-change: filter;
+  transition: filter 300ms;
+  scale: 1;
+  cursor: pointer;
+}
+.logo:hover {
+  scale: 1.1;
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #fb6161aa);
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;}
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.background {
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start;
+  min-height: 100vh;
+  height: 100%; 
+  width: 100vw;
+  background-color: white;
+}
+
+.nav {
+  display: flex;
+  width: 80%;
+  align-items: center;
+}
+
+.slideDown {
+  display: flex;
+  animation: slideDown 0.5s ease-out forwards;
+}
+
+.fade {
+  display: flex;
+  align-items: baseline;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.top {
+  display: flex;
+  position: fixed;
+  z-index:  100;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  align-items: flex-start;
+  background-color: white;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  height: 90%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.separate-window {
+  display: flex;
+  width: 100%;
+  height: 1px;
+  background-color: gray;
+  position: fixed;
+  left: 0;
+  top: 10vh;
+  z-index: 10000
+}
+
+.divBar {
+  display: flex;
+  width: 100%;
+  height: 1px;
+  background-color: gray;
+}
+
+.info {
+  display: flex;
+  width: 93%;
+  align-self: center;
+  justify-content: flex-start;
+  height: 40vh;
+  /* border: 2px solid transparent;
+  border-color: gray; 
+  border-radius: 10px; */
+  background-color: white;
+  /* animation: slideDown 0.5s ease-out forwards; */
+}
+
+.box {
+  display: flex;
+  padding: 1.5em;
+  padding-left: 0;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.box h1, h3 {
+  margin: 0;
+}
